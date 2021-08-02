@@ -1,0 +1,128 @@
+$base-color: #081a45;
+$base-color2: #00aae7;
+
+// Dark Theme [start]
+.navbar_container.dark_nav {
+  background-color: $base-color;
+  transition: background 0.3s ease-in-out, filter 0.3s ease-in-out;
+  .navigation {
+    .navItem {
+      border-color: white;
+      a {
+        color: white;
+      }
+    }
+  }
+  .options_nav {
+    .search_icon {
+      filter: invert(100%);
+    }
+    .languages {
+      background-color: $base-color;
+      transition: background 0.3s ease-in-out, filter 0.3s ease-in-out;
+      color: white;
+      option {
+        color: $base-color;
+        background-color: $base-color2;
+      }
+    }
+    .burger_menu {
+      img {
+        background: white;
+        padding: 8px;
+      }
+    }
+  }
+}
+
+// Dark Theme [end]
+
+.navbar_container {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 30px 0 30px;
+  transition: background 0.3s ease-in-out, filter 0.3s ease-in-out;
+
+  .logo {
+    img {
+      @media screen and (max-width: 410px) {
+        width: 100px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 860px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 100;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 530px) {
+    justify-content: space-between;
+  }
+
+  .navigation {
+    @media screen and (max-width: 860px) {
+      display: none;
+    }
+    ul {
+      .navItem:last-child {
+        border: none;
+      }
+      .navItem {
+        display: inline;
+        border-right: 1px solid $base-color;
+        padding: 0 10px;
+        a {
+          text-decoration: none;
+          color: $base-color;
+          &:hover {
+            color: $base-color2;
+          }
+        }
+      }
+      .subMenu {
+        position: relative;
+      }
+      .subMenu:hover {
+        .subMenu_container {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .options_nav {
+    display: flex;
+    align-items: center;
+
+    .burger_menu {
+      cursor: pointer;
+
+      @media screen and (min-width: 860px) {
+        display: none;
+      }
+    }
+    .search_icon {
+      width: 25px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .languages {
+      border: none;
+      outline: none;
+      color: $base-color;
+
+      @media screen and (max-width: 860px) {
+        display: none;
+      }
+    }
+  }
+}

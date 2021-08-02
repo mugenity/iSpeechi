@@ -1,0 +1,14 @@
+.img_container {
+  flex: 2;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    //for animation
+    opacity: 0;
+  }
+}

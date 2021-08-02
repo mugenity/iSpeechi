@@ -1,0 +1,27 @@
+$base-color: #081a45;
+$base-color2: #00aae7;
+.select_lang_container {
+  margin: 30px 0;
+  .select_lang_title {
+    text-align: center;
+    position: relative;
+    h2 {
+      margin: 10px 20px;
+      font-size: 2rem;
+
+      @media screen and (max-width: 455px) {
+        font-size: 1.8rem;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 2.5px;
+        width: 100px;
+        top: 35px;
+        margin-left: 100px;
+        background-color: $base-color2;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+$base-color: #081a45;
+$base-color2: #00aae7;
+
+.subMenu_container {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: $base-color2;
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  display: none;
+  -webkit-box-shadow: 2px 8px 26px 0px rgba(0, 0, 0, 0.58);
+  box-shadow: 2px 8px 26px 0px rgba(0, 0, 0, 0.58);
+  border: 1px solid white;
+  z-index: 2;
+
+  .subMenu_item.dark {
+    .subMenu_link {
+      color: $base-color !important;
+      &:hover {
+        color: white !important;
+      }
+    }
+  }
+
+  .subMenu_item {
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 5px;
+
+    .subMenu_link:hover {
+      color: white !important;
+    }
+  }
+}

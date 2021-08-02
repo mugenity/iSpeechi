@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$base-color: #081a45;
+$base-color2: #00aae7;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  // background-color: white;
+  font-family: "Roboto", sans-serif;
+  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+}
+
+a {
+  cursor: pointer;
+}
+
+#darkMode {
+  background: transparent url("./assets/moon.svg") no-repeat center;
+  background-size: 25px 25px;
+  width: 35px;
+  height: 35px;
+  // filter: grayscale(100%);
+  border: none;
+  border-radius: 50%;
+  transition: background 0.3s ease-in-out, filter 0.3s ease-in-out;
+
+  @media screen and (max-width: 530px) {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#darkMode:hover,
+#darkMode:focus {
+  filter: none;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+#darkMode.clicked {
+  filter: none !important;
+  background-color: #081a45;
+}
+
+body.light {
+  background: white;
+}
+
+body.dark {
+  background: $base-color;
+}

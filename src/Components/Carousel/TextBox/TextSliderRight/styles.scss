@@ -1,0 +1,34 @@
+$base-color: #081a45;
+$base-color2: #00aae7;
+
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-end;
+  //for animation
+  opacity: 0;
+
+  .title {
+    width: 100%;
+    text-align: right;
+    span {
+      color: $base-color2;
+    }
+  }
+  .infoText {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+    p {
+      font-size: 0.9rem;
+      span {
+        color: $base-color2;
+      }
+    }
+  }
+}

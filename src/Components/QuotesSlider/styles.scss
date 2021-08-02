@@ -1,0 +1,29 @@
+$base-color: #081a45;
+$base-color2: #00aae7;
+
+.keen-slider.dark {
+  color: white;
+}
+
+.keen-slider {
+  height: 150px;
+  cursor: grab;
+
+  .keen-slider__slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      margin: 10px 0;
+      span {
+        color: $base-color2;
+      }
+      .authorName {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+$base-color: #081a45;
+$base-color2: #00aae7;
+
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button {
+  border: none;
+  display: block;
+  padding: 8px 20px;
+  width: 120px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    z-index: -1;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+// custom-Button
+.placement_btn {
+  background-color: $base-color;
+  border: 1px solid white;
+  color: white;
+  padding: 8px;
+  margin-right: 20px;
+
+  @media screen and (max-width: 530px) {
+    display: none;
+  }
+
+  &:after,
+  &:before {
+    background-color: $base-color2;
+  }
+}
+
+.carousel_btn {
+  background-color: white;
+  color: $base-color;
+  width: 150px;
+  border: 1px solid white;
+  margin-top: 20px;
+
+  &:after,
+  &:before {
+    background-color: $base-color2;
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+.evaluate_btn {
+  background-color: $base-color2;
+  color: white;
+  border: 1px solid white;
+  margin-top: 20px;
+
+  &:after,
+  &:before {
+    background-color: $base-color;
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+.plan_btn {
+  background-color: white;
+  color: $base-color;
+  border: 1px solid white;
+  margin: 20px 0 20px 25px;
+
+  &:after,
+  &:before {
+    background-color: $base-color;
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+.plan_btn_premium {
+  background-color: $base-color2;
+  color: white;
+  margin-left: 25px;
+
+  &:after,
+  &:before {
+    background-color: white;
+  }
+
+  &:hover {
+    color: $base-color2;
+  }
+}
+
+.teachers_btn {
+  background-color: $base-color2;
+  border: 1px solid white;
+  color: white;
+
+  &:after,
+  &:before {
+    background-color: $base-color;
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+.footer_btn {
+  color: white;
+  margin-top: 10px;
+  background-color: $base-color2;
+  width: 150px;
+  padding: 15px;
+
+  &:after,
+  &:before {
+    background-color: white;
+  }
+
+  &:hover {
+    color: $base-color2;
+  }
+}

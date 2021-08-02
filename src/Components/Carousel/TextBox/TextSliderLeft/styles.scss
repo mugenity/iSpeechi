@@ -1,0 +1,44 @@
+$base-color: #081a45;
+$base-color2: #00aae7;
+
+.containerLeft {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  //for animation
+  opacity: 0;
+
+  .titleLeft {
+    width: 100%;
+    span {
+      color: $base-color2;
+    }
+  }
+  .infoTextLeft {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    p {
+      font-size: 0.9rem;
+      span {
+        color: $base-color2;
+      }
+    }
+  }
+  .btnBoxLeft {
+    button {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 20px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
