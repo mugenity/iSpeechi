@@ -1,3 +1,3 @@
-# iSpeechi the easy way to lean new languages
+# iSpeechi the easy way to learn new languages
 
 This project can be seen live here =>
