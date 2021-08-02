@@ -2,9 +2,9 @@
 
 ## Mockup of the project with Figma
 
-Desktop version : [https://www.figma.com/file/t9bBGMzNAO4OsA3vb7gVhM/iSpeechi_LP?node-id=0%3A1](Desktop Version)
+Desktop version : [https://www.figma.com/file/t9bBGMzNAO4OsA3vb7gVhM/iSpeechi_LP?node-id=0%3A1]
 
-Mobile version : [https://www.figma.com/file/jl9PcHVv8bscWRhfaUpRnV/iSpeechi_LP_phone?node-id=0%3A1](Mobile Version)
+Mobile version : [https://www.figma.com/file/jl9PcHVv8bscWRhfaUpRnV/iSpeechi_LP_phone?node-id=0%3A1]
 
 ### Dependencies I have used for this project :
 
