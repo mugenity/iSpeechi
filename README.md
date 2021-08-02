@@ -1,4 +1,4 @@
-# -- iSpeechi -- LEARN NEW LANGUAGES WEB APP
+# -- iSpeechi -- The webApp to learn new languages
 
 ## Mockup with Figma
 
